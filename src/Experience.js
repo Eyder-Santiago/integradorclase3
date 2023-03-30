@@ -2,7 +2,7 @@ import { OrbitControls } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 //importar clase Model
 import Model from './Model'
-import Model2 from './Model2'
+import Fox from './Fox'
 
 export default function Experience()
 {
@@ -17,7 +17,7 @@ export default function Experience()
 
         //importar clase Model
         <Model/>
-        <Model2/>
+        <Fox/>
 
         <mesh position-y={ - 1 } rotation-x={ - Math.PI * 0.5 } scale={ 10 }>
             <planeGeometry />
