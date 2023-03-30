@@ -7,7 +7,7 @@ export default function Model(){
     //En cada de los mesh agregamos el pan de abajo, carne, queso, y pan de arriba
     const { nodes, materials } = useGLTF("/static/Hamburger.glb");
     return (
-      <group>
+      <group scale={0.1}>
         <mesh
           geometry={nodes.bottomBun.geometry}
           material={materials.BunMaterial}

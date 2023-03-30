@@ -19,8 +19,8 @@ export default function Fox() {
 
   return <primitive
     object={ fox.scene }
-    scale={0.2}
-    position={[7, 0, 5]}
+    scale={0.02}
+    position={[1, 0, 1]}
   />
 
 

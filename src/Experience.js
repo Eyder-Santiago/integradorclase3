@@ -1,4 +1,4 @@
-import { OrbitControls } from '@react-three/drei'
+import { FirstPersonControls } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 //importar clase Model
 import Model from './Model'
@@ -10,7 +10,14 @@ export default function Experience()
         //Para ver los recursos del pc
         <Perf position="top-left" />
 
-        <OrbitControls makeDefault />
+        const controlsRef = useRef();
+
+
+        <FirstPersonControls 
+            movementSpeed = {100}
+            lookSpeed = {0.01}
+            lookVertical = {true}
+        />
 
         <directionalLight position={[1, 2, 3]} intensity={ 1.5 } />
         <ambientLight intensity={ 0.5 } />
